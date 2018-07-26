@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>808a57bb-199f-46c4-a54f-9e7148807f43</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedProject1</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncDispatcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IAsyncInterceptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageInterceptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RabbitMqClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MessageDispatcher.cs" />
+  </ItemGroup>
+</Project>
